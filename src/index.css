@@ -1,0 +1,156 @@
+body {
+  font: 14px "Century Gothic", Futura, sans-serif;
+  margin: 20px;
+}
+
+@keyframes color {
+  0% {
+    background: #f0b381;
+  }
+  20% {
+    background: #f77ea6;
+  }
+  40% {
+    background: #b8cc33;
+  }
+  60% {
+    background: #e78ef3;
+  }
+  80% {
+    background: #88eb8a;
+  }
+  100% {
+    background: #8ef5f5;
+  }
+}
+
+body {
+  background: #f5a475; /* Fallback */
+  animation: color 9s infinite linear;
+  text-align: center;
+  padding: 2em;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 40px;
+  color: rgb(50, 138, 179);
+}
+
+ol,
+ul {
+  padding-left: 30px;
+}
+
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.board-row {
+  display: flex;
+  justify-content: center;
+}
+
+.status {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 60px;
+  color: rgb(50, 138, 179);
+}
+
+.winner-status {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 60px;
+  color: rgb(243, 106, 32);
+}
+
+.square {
+  background: rgb(207, 184, 195);
+  border: 3px solid rgb(255, 255, 255);
+  float: left;
+  color: rgb(50, 138, 179);
+  font-size: 60px;
+  font-weight: bold;
+  line-height: 30px;
+  height: 140px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 210px;
+}
+
+.square:focus {
+  outline: none;
+}
+
+.kbd-navigation .square:focus {
+  background: #ddd;
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2%;
+  margin-bottom: 7%;
+  justify-content: center;
+}
+
+.game-info {
+  margin-left: 20px;
+}
+
+.animate-charcter {
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+  font-size: 100px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.align-col {
+  margin: 0 auto;
+}
+
+.div-play-again {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.play-again {
+  padding: 10px;
+  color: #fff;
+  font-weight: 600;
+  background-color: #198754;
+  border-color: #198754;
+}
